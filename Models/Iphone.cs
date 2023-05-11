@@ -13,7 +13,7 @@ namespace AbstracaoCelular.Models
         public override void InstalarAplicativo(string nome)
         {
             Console.WriteLine("Instalando aplicativo...");
-            Console.WriteLine("Aplicativo instalado com sucesso no Iphone");
+            Console.WriteLine($"Aplicativo {nome} instalado com sucesso no Iphone");
         }
     }
 }
