@@ -1,26 +1,14 @@
-﻿namespace AbstracaoCelular.Models;
+﻿using AbstracaoCelular.Models;
 
+Nokia nokia = new Nokia("965144897", "Lumia 630", "000000-00-000000-0", "64");
 
-/* 
-OK:
-Criar classe abstrata Smartphone, com os atributos:
-- número: string _> public
-- Modelo: string > private
-- IMEI: string > private
-- Memoria: int > private
-OK: 
-Criar os metodos para a classe Smartphone:
-- Ligar()
-- ReceberLigacao()
-- InstalarAplicativo(string nome) -> metodo abstrato
-OK:
-IMPORTANTE: O método InstalarAplicativo deve ser sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
-OK:
-Havera duas classes que irao herdar de Smartphone, criar as classes:
--Nokia
--Iphone
-OK:
-Criar o metodo instalarAplicativo(string nome) para a classe Nokia
-OK:
-Criar o metodo instalarAplicativo(string nome) para a classe Iphone 
-*/
+Iphone iphone = new Iphone("947689514", "14 Pro Max", "111111-11-111111-1", "128");
+
+nokia.Ligar();
+nokia.ReceberLigacao();
+nokia.InstalarAplicativo("Whatsapp");
+
+iphone.Ligar();
+iphone.ReceberLigacao();
+iphone.InstalarAplicativo("Whatsapp");
+
